@@ -17,6 +17,10 @@
 		FA45ECAF20906FD000A11F33 /* SwiftHomeworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45ECAE20906FD000A11F33 /* SwiftHomeworkUITests.swift */; };
 		FA45ECBF20907B4E00A11F33 /* TimerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45ECBE20907B4E00A11F33 /* TimerDemo.swift */; };
 		FA45ECC1209086A000A11F33 /* Timer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA45ECC0209086A000A11F33 /* Timer.xcassets */; };
+		FA45ECC720917A0B00A11F33 /* Video.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA45ECC620917A0B00A11F33 /* Video.xcassets */; };
+		FA45ECCA20917AAB00A11F33 /* VideoDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45ECC920917AAB00A11F33 /* VideoDemo.swift */; };
+		FA602A142091C79A00043373 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA602A132091C79A00043373 /* VideoCell.swift */; };
+		FA602A152091D68200043373 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA45ECC820917A2000A11F33 /* emoji zone.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		FA45ECB020906FD000A11F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA45ECBE20907B4E00A11F33 /* TimerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDemo.swift; sourceTree = "<group>"; };
 		FA45ECC0209086A000A11F33 /* Timer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Timer.xcassets; sourceTree = "<group>"; };
+		FA45ECC620917A0B00A11F33 /* Video.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Video.xcassets; sourceTree = "<group>"; };
+		FA45ECC820917A2000A11F33 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
+		FA45ECC920917AAB00A11F33 /* VideoDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDemo.swift; sourceTree = "<group>"; };
+		FA602A132091C79A00043373 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 			children = (
 				FA45ECC220908CB700A11F33 /* Utils */,
 				FA45ECBD20907ADB00A11F33 /* 01.Timer */,
+				FA45ECC52091794100A11F33 /* 02.Video */,
 				FA45EC8E20906FCF00A11F33 /* AppDelegate.swift */,
 				FA45EC9020906FCF00A11F33 /* ViewController.swift */,
 				FA45EC9220906FCF00A11F33 /* Main.storyboard */,
@@ -169,6 +178,17 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA45ECC52091794100A11F33 /* 02.Video */ = {
+			isa = PBXGroup;
+			children = (
+				FA45ECC920917AAB00A11F33 /* VideoDemo.swift */,
+				FA45ECC820917A2000A11F33 /* emoji zone.mp4 */,
+				FA45ECC620917A0B00A11F33 /* Video.xcassets */,
+				FA602A132091C79A00043373 /* VideoCell.swift */,
+			);
+			path = 02.Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +300,9 @@
 				FA45EC9920906FD000A11F33 /* LaunchScreen.storyboard in Resources */,
 				FA45EC9620906FD000A11F33 /* Assets.xcassets in Resources */,
 				FA45EC9420906FCF00A11F33 /* Main.storyboard in Resources */,
+				FA602A152091D68200043373 /* emoji zone.mp4 in Resources */,
 				FA45ECC1209086A000A11F33 /* Timer.xcassets in Resources */,
+				FA45ECC720917A0B00A11F33 /* Video.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,8 +366,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA602A142091C79A00043373 /* VideoCell.swift in Sources */,
 				FA45EC9120906FCF00A11F33 /* ViewController.swift in Sources */,
 				FA45EC8F20906FCF00A11F33 /* AppDelegate.swift in Sources */,
+				FA45ECCA20917AAB00A11F33 /* VideoDemo.swift in Sources */,
 				FA45ECBF20907B4E00A11F33 /* TimerDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,7 +546,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftHomework/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = szq.SwiftHomework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -537,7 +564,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftHomework/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = szq.SwiftHomework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -552,7 +582,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftHomeworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = szq.SwiftHomeworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -568,7 +602,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftHomeworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = szq.SwiftHomeworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -583,7 +621,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftHomeworkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = szq.SwiftHomeworkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -598,7 +640,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftHomeworkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = szq.SwiftHomeworkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

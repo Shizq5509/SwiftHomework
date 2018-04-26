@@ -26,6 +26,7 @@ class ViewController: UITableViewController {
     
     func setupDemos() {
         self.addClass(title: "Timer", className: "TimerDemo")
+        self.addClass(title: "Video", className: "VideoDemo")
     }
     
     func addClass(title:String,className:String) {
